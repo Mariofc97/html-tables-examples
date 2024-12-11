@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main-pkmn.css" />
+    <title>HTML Table Example</title>
+</head>
+
+<body>
+    <h2 id="pkmn-initials">pkmn initials</h2>
+    <div class="table-wrapper">
+        <table aria-labelledby="pkmn-initials">
+            <thead>
+                <tr>
+                    <th id="Generation" scope="col">Generation number/Region</th>
+                    <th id="Console" scope="col">Console</th>
+                    <th id="Initials" scope="col">Initials</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="Kanto" scope="row" headers="Generation">
+                        <svg width="80" height="80" style="vertical-align: middle; margin-right: 5px; margin-left: 5px;">
+                            <circle cx="40" cy="40" r="35" fill="black" />
+                            <path d="M10 40 A30 30 0 0 1 70 40 L70 40 Z" fill="red" />
+                            <path d="M10 40 A30 30 0 0 0 70 40 L70 40 Z" fill="white" />
+                            <circle cx="40" cy="40" r="10" fill="white" />
+                            <text x="40" y="60" font-size="35" text-anchor="middle" fill="black">1</text>
+                          </svg>
+                        Kanto
+                    </th>
+                    <td headers="Kanto Console">Game Boy</td>
+                    <td headers="Kanto Initials"><img src="/images/pkmn-initials-kanto.jpg" alt="initials-kanto" class="initials-images"></td>
+                </tr>
+                <tr>
+                    <th id="Johto" scope="row" headers="Generation">
+                        <svg width="80" height="80" style="vertical-align: middle; margin-right: 5px; margin-left: 5px;">
+                            <circle cx="40" cy="40" r="35" fill="black" />
+                            <path d="M10 40 A30 30 0 0 1 70 40 L70 40 Z" fill="red" />
+                            <path d="M10 40 A30 30 0 0 0 70 40 L70 40 Z" fill="white" />
+                            <circle cx="40" cy="40" r="10" fill="white" />
+                            <text x="40" y="60" font-size="35" text-anchor="middle" fill="black">2</text>
+                          </svg>
+                        Johto
+                    </th>
+                    <td headers="Johto Console">Game Boy / Game Boy Color</td>
+                    <td headers="Johto Initials"><img src="/images/pkmn-initials-johto.jpg" alt="initials-johto" class="initials-images"></td>
+                </tr>
+                
+                <tr>
+                    <th id="Hoenn" scope="row" headers="Generation">
+                        <svg width="80" height="80" style="vertical-align: middle; margin-right: 5px; margin-left: 5px;">
+                            <circle cx="40" cy="40" r="35" fill="black" />
+                            <path d="M10 40 A30 30 0 0 1 70 40 L70 40 Z" fill="red" />
+                            <path d="M10 40 A30 30 0 0 0 70 40 L70 40 Z" fill="white" />
+                            <circle cx="40" cy="40" r="10" fill="white" />
+                            <text x="40" y="60" font-size="35" text-anchor="middle" fill="black">3</text>
+                          </svg>
+                        Hoenn
+                    </th>
+                    <td headers="Hoenn Console">Game Boy Advance</td>
+                    <td headers="Hoenn Initials"><img src="/images/pkmn-initials-hoenn.webp" alt="initials-hoenn" class="initials-images-h"></td>
+                </tr>                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th id="Sinnoh" scope="row" headers="Generation">
+                        <svg width="80" height="80" style="vertical-align: middle; margin-right: 5px; margin-left: 5px;">
+                            <circle cx="40" cy="40" r="35" fill="black" />
+                            <path d="M10 40 A30 30 0 0 1 70 40 L70 40 Z" fill="red" />
+                            <path d="M10 40 A30 30 0 0 0 70 40 L70 40 Z" fill="white" />
+                            <circle cx="40" cy="40" r="10" fill="white" />
+                            <text x="40" y="60" font-size="35" text-anchor="middle" fill="black">4</text>
+                        </svg>
+                        Sinnoh
+                    </th>
+                    <td headers="Sinnoh Console">Nintendo DS</td>
+                    <td headers="Sinnoh Initials"><img src="/images/pkmn-initials-sinnoh.webp" alt="initials-sinnoh" class="initials-images-s"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+
+</html>

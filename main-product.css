@@ -1,0 +1,93 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Helvetica;
+    border: #000000 2px solid;
+    margin: 300px;
+  }
+  
+  h2 {
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  
+  .table-wrapper {
+    margin: 10px 70px 70px;
+  }
+  
+  table {
+    border-radius: 5px;
+    font-size: 20px;
+    border: #667caf 2px solid;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: rgb(216, 232, 245);
+  }
+  
+  caption {
+    caption-side: bottom;
+    margin: 14px 0px;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .empty{
+    background-color: #ffffff;
+    border-top: #ffffff 2px solid;
+    border-left: #ffffff 2px solid;
+}
+
+
+
+  table td:first-child, table th:first-child{
+    width: 30%;
+    text-align: left;
+    padding-left: 15px;
+  }
+  
+  table td:nth-child(2), table th:nth-child(2) {
+    width: 18%;
+  }
+
+  table td:nth-child(3), table th:nth-child(3) {
+    width: 18%;
+  }
+
+  table td:nth-child(4), table th:nth-child(4) {
+    width: 18%;
+  }
+  table td,
+  table th {
+    text-align: center;
+    padding: 30px;
+    border: #667caf 2px solid;
+  }
+  
+  table td {
+    border-right: 1px solid #f8f8f8;
+  }
+  
+  
+  table thead th {
+    color: #000000;
+    background: #667caf;
+  }
+  
+  
+  table tr:nth-child(even) {
+    background: rgb(147, 203, 248);
+  }
+
+  table tfoot tr{
+    background: rgb(147, 203, 248);
+  }
+  

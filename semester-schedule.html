@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main-semester.css" />
+    <title>HTML Table Example</title>
+</head>
+
+<body>
+    <h2 id="weeklyCourseSchedule">Semester II Schedule</h2>
+    <div class="table-wrapper">
+        <table aria-labelledby="weeklyCourseSchedule">
+            <caption>Fig: Semester 2 Course Schedule.</caption>
+            <thead>
+                <tr>
+                    <th id="Course" scope="col">Course</th>
+                    <th id="Time" scope="colgroup" colspan="2">Time</th>
+                    <th id="Room" scope="col">Room</th>
+                    <th id="Day" scope="col">Day</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="course-name" scope="rowgroup" rowspan="2" headers="Course">English II</th>
+                    <td headers="EnglishII Time ">9:00</td>
+                    <td headers="EnglishII Time">11:00</td>
+                    <td headers="EnglishII Room">L2201</td>
+                    <td headers="EnglishII Day">Monday</td>
+                </tr>
+                <tr>
+                    <td id="Course" scope="row" headers="Course">9:00</td>
+                    <td headers="EnglishII Time">11:00</td>
+                    <td headers="EnglishII Room">L2201</td>                    
+                    <td headers="EnglishII Day">Wednesday</td>
+                </tr>
+                <tr>
+                    <th class="course-name" scope="row" headers="Course">Geography</th>
+                    <td headers="Geography Time">11:00</td>
+                    <td headers="Geography Time">12:45</td>
+                    <td headers="Geography Room">G107</td>
+                    <td headers="Geography Day">Tuesday</td>  
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th class="course-name" scope="row" headers="row" headers="Course">Biology</th>
+                    <td headers="Biology Time">9:00</td>
+                    <td headers="Biology Time">11:00</td>
+                    <td headers="Biology Room">B302</td>
+                    <td headers="Biology Day">Friday</td>                 
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+
+</html>
